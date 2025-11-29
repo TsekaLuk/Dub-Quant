@@ -2,11 +2,11 @@
   "crons": [
     {
       "path": "/api/cron/domains/verify",
-      "schedule": "0 * * * *"
+      "schedule": "0 0 * * *"
     },
     {
       "path": "/api/cron/email-domains/verify",
-      "schedule": "0 * * * *"
+      "schedule": "5 0 * * *"
     },
     {
       "path": "/api/cron/domains/renewal-reminders",
@@ -18,11 +18,11 @@
     },
     {
       "path": "/api/cron/streams/update-workspace-clicks",
-      "schedule": "* * * * *"
+      "schedule": "10 0 * * *"
     },
     {
       "path": "/api/cron/streams/update-partner-stats",
-      "schedule": "*/2 * * * *"
+      "schedule": "15 0 * * *"
     },
     {
       "path": "/api/cron/usage",
@@ -38,7 +38,7 @@
     },
     {
       "path": "/api/cron/payouts/aggregate-due-commissions",
-      "schedule": "0 * * * *"
+      "schedule": "20 0 * * *"
     },
     {
       "path": "/api/cron/payouts/reminders/partners",
@@ -50,7 +50,7 @@
     },
     {
       "path": "/api/cron/calculate-program-similarities",
-      "schedule": "0 */12 * * *"
+      "schedule": "25 0 * * *"
     }
   ],
   "functions": {
